@@ -1,9 +1,9 @@
 # Docker Spring Boot and React sample project
 
-##To build an image from the Dockerfile: 
+## To build an image from the Dockerfile: 
 `docker build -t springio/gs-spring-boot-docker .`
 
-##To run a container from the image:
+## To run a container from the image:
 `docker run -p 8080:8080 springio/gs-spring-boot-docker`
 
 # Getting Started with Create React App

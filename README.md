@@ -2,17 +2,23 @@
 
 ## Spring Boot (The backend)
 ### To build an image from the Dockerfile: 
-`docker build -t springio/gs-spring-boot-docker .`
+`docker build -t dockertestbackend:latest .`
 
 ### To run a container from the image:
-`docker run -p 8080:8080 springio/gs-spring-boot-docker`
+`docker run -p 8080:8080 dockertestbackend`
 
 
 ## Spring Boot (The frontend)
 ### To build an image from the Dockerfile:
-`docker build -t myreactdocker:latest .`
+`docker build -t dockertestfrontend:latest .`
 
 ### Getting Started with Create React App
-`docker run --name myreactdocker -d -p 3000:3000 myreactdocker:latest`
+`docker run --name dockertestfrontend -d -p 3000:3000 dockertestfrontend`
 
-https://medium.com/geekculture/getting-started-with-docker-in-your-react-js-application-the-basics-6e5300cf749d
+## Run full stack (docker-compose.yaml) 
+
+### to build images from dockerfiles and then run containers from the images:
+`docker-compose up`
+
+### To top the containers
+`docker-compose down`
